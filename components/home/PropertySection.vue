@@ -1,14 +1,12 @@
 <template>
     <div class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
+        <div class="container mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Image Section -->
                 <div class="relative">
                     <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&crop=center"
-                        alt="Ocean View Terrace" class="w-full h-96 object-cover rounded-lg shadow-lg" />
-                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-full">
-                        <Icon name="lucide:arrow-right" width="20" height="20" />
-                    </div>
+                        alt="Ocean View Terrace" class="w-full h-full object-cover rounded-lg shadow-2xl" />
+                   
                 </div>
 
                 <!-- Content Section -->

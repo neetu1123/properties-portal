@@ -5,7 +5,8 @@
                 <!-- Company Info -->
                 <div class="space-y-6">
                     <div>
-                        <h3 class="text-2xl font-bold mb-4">Comapany Name</h3>
+                        <h3 class="text-2xl font-bold mb-4">A Curated Vacation
+                        </h3>
                         <p class="text-gray-300 leading-relaxed">
                             The perfect headquarters for your Smoky Mountain Vacation! Nestled in the Spur of
                             Gatlinburg.
@@ -24,32 +25,38 @@
                     <ul class="space-y-3">
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Book
+                                Home        
                             </a>
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Location
+                                About Us
                             </a>
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Photos
+                               About Owner
+
                             </a>
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Rates
+                                Vacation Rentals
                             </a>
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Availability
+                                Attractions
                             </a>
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Reviews
+                               FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:textColor transition-colors">
+                               Contact Us
                             </a>
                         </li>
                     </ul>
@@ -59,16 +66,6 @@
                 <div class="space-y-6">
                     <h4 class="text-xl font-semibold">Contact</h4>
                     <div class="space-y-4">
-                        <div class="flex items-center">
-                            <Icon name="lucide:facebook" width="20" height="name" class="text-gray-300 !size-4 mr-3" />
-                            <span class="text-gray-300">CompanyName</span>
-                        </div>
-
-                        <div class="flex items-center">
-                            <Icon name="lucide:instagram" width="20" height="name" class="text-gray-300 !size-4 mr-3" />
-                            <span class="text-gray-300">@CompanyName</span>
-                        </div>
-
                         <div class="flex items-center">
                             <Icon name="lucide:phone" width="20" height="name" class="text-gray-300 !size-4 mr-3" />
                             <span class="text-gray-300">(513) 314-7544</span>
@@ -108,14 +105,9 @@
                     <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
                         <Icon name="lucide:instagram" width="24" height="24" />
                     </a>
+                   
                     <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-                        <Icon name="lucide:twitter" width="24" height="24" />
-                    </a>
-                    <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-                        <Icon name="lucide:youtube" width="24" height="24" />
-                    </a>
-                    <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-                        <Icon name="lucide:linkedin" width="24" height="24" />
+                        <img src="/tiktok.avif" width="24" height="24" />
                     </a>
                 </div>
             </div>

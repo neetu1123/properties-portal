@@ -1,7 +1,10 @@
 <template>
     <div class="bg-gray-50 py-16">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
         <!-- Why Stay With Savvy Section -->
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div>
@@ -9,7 +12,12 @@
                         Why Stay With Comapany Name?
                     </h2>
                     <p class="text-gray-600 mb-8 leading-relaxed">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sunt necessitatibus repudiandae, reprehenderit quae earum reiciendis possimus maxime consequatur porro placeat, suscipit vel iure, ipsam perferendis? Accusantium harum voluptatum incidunt maxime quos. Quidem, unde quae perferendis delectus minima quia quis exercitationem ea architecto ullam nulla veniam dolorum autem ipsam vero, tempora odio. Nihil architecto voluptas molestiae ratione neque fuga ipsa.   
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum sunt necessitatibus
+                        repudiandae, reprehenderit quae earum reiciendis possimus maxime consequatur porro placeat,
+                        suscipit vel iure, ipsam perferendis? Accusantium harum voluptatum incidunt maxime quos. Quidem,
+                        unde quae perferendis delectus minima quia quis exercitationem ea architecto ullam nulla veniam
+                        dolorum autem ipsam vero, tempora odio. Nihil architecto voluptas molestiae ratione neque fuga
+                        ipsa.
                     </p>
 
                     <!-- Features Grid -->
@@ -26,7 +34,7 @@
                     <button
                         class="bgGradient text-white px-8 py-4 justify-center rounded-lg font-semibold transition-colors duration-200 flex items-center space-x-2">
                         <span>Book Now </span>
-                        <Icon name="lucide:arrow-right" class="!size-4" /> 
+                        <Icon name="lucide:arrow-right" class="!size-4" />
                     </button>
                 </div>
 
@@ -34,18 +42,16 @@
                 <div class="relative">
                     <div class="rounded-3xl overflow-hidden shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&crop=center"
-                            alt="Luxury vacation rental with pool" class="w-full h-96 object-cover" />
+                            alt="Luxury vacation rental with pool" class="w-full h-full object-cover" />
                         <!-- Partner Badges -->
                         <div class="absolute -bottom-10 right-36 flex space-x-6">
-                            <div class="bg-white rounded-lg p-4 px-8  shadow-lg flex">
+                            <div class="bg-white rounded-lg p-2 px-8  shadow-lg flex">
 
-                                <div class=" p-4">
-                                    <span class="text-blue-500 font-bold text-sm">airbnb</span>
-                                    <div class="text-red-500 font-bold text-sm">❤️ superhost</div>
+                                <div class="px-2">
+                                    <img src="/AirBnB.jpg" alt="">
                                 </div>
-                                <div class=" p-4">
-                                    <span class="text-blue-500 font-bold text-sm">vrbo</span>
-                                    <div class="text-gray-400 text-xs">Premier Partner</div>
+                                <div class=" px-4">
+                                    <img src="/Vrbo.jpg" alt="">
                                 </div>
                             </div>
                         </div>

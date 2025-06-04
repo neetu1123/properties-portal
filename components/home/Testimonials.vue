@@ -14,7 +14,7 @@
             </div>
 
             <div class="relative">
-                <div class="bg-[#4a8a9e]  transform rounded-3xl p-8 relative overflow-hidden">
+                <div class="bg-[#4a8a9e] transform rounded-3xl p-20 relative overflow-hidden">
                     <div class="flex justify-center items-center space-x-8">
                         <!-- Previous testimonial (partially visible) -->
                         <div class="hidden lg:block w-80 opacity-50 transform scale-95">

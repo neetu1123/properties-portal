@@ -1,13 +1,12 @@
 <template>
     <!-- Navigation Bar -->
     <nav class="bg-[#004369] opacity-70 shadow-md fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold">
-                        <span class="text-white">Company</span>
-                        <span class="lightText">Name</span>
+                    <h1 class="">
+                       <img src="/A_Curated_Vacation_logo_page-0001__1_-removebg-preview.png" class="h-12" alt="">
                     </h1>
                 </div>
 
@@ -24,7 +23,7 @@
                 </div>
 
                 <!-- Social Icons -->
-                <div class="hidden md:flex items-center space-x-4">
+                <div class="hidden md:flex items-center space-x-4 mr-6">
                     <a href="#" class="text-white hover:text-lightText transition-colors">
                         <Icon name="lucide:facebook" width="20" class="!size-5" height="20" />
                     </a>
@@ -32,11 +31,9 @@
                         <Icon name="lucide:instagram" width="20" class="!size-5" height="20" />
                     </a>
                     <a href="#" class="text-white hover:text-lightText transition-colors">
-                        <Icon name="lucide:phone" width="20" class="!size-5" height="20" />
+                        <img src="/tiktok.avif" width="24" height="24" />
                     </a>
-                    <a href="#" class="text-white hover:text-lightText transition-colors">
-                        <Icon name="lucide:mail" width="20" class="!size-5" height="20" />
-                    </a>
+                   
                 </div>
 
                 <!-- Mobile Menu Button -->
