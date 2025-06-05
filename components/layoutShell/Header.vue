@@ -13,7 +13,7 @@
 
                     <!-- Desktop Navigation -->
                     <div class="hidden md:flex items-center space-x-8">
-                        <button class="bg-[#1B7895] text-white px-6 py-2 rounded-full font-medium transition-colors">
+                        <button class="bg-[#1B7895] hover:bg-[#5790a1] hover:scale-110 duration-300 text-white px-6 py-2 rounded-full font-medium transition-colors">
                             Book
                         </button>
                         <a href="#" class="text-white hover:text-lightText font-medium transition-colors">Location</a>

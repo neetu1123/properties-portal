@@ -6,10 +6,7 @@
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">
                     Guest <span class="lightText">Reviews</span>
                 </h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">
-                    Get inspired by glowing guest reviews that showcase the exceptional experiences and
-                    unforgettable memories created by the staff at Special Places of Costa Rica.
-                </p>
+               
             </div>
             <div class="relative mb-16">
                 <div
@@ -30,7 +27,7 @@
                             class="absolute -top-0 -left-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
                         </div> -->
-                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                        <div class="mx-8 mb-4 border-b border-gray-100 pb-3">
                             <h3 class="text-xl font-bold text-gray-800">Ethan Parker</h3>
                             <div class="flex items-center justify-between">
                                 <p class="text-gray-500 text-sm">Guest</p>
@@ -61,7 +58,7 @@
                             class="absolute -top-1 -left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
                         </div> -->
-                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                        <div class="mx-8 mb-4 border-b border-gray-100 pb-3">
                             <h3 class="text-xl font-bold text-gray-800">Ava Thompson</h3>
                             <div class="flex items-center justify-between">
                                 <p class="text-gray-500 text-sm">Guest</p>
@@ -92,7 +89,7 @@
                             class="absolute -top-0 -left-5  bg-gradient-to-r from-purple-500 to-purple-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
                         </div> -->
-                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                        <div class="mx-8 mb-4 border-b border-gray-100 pb-3">
                             <h3 class="text-xl font-bold text-gray-800">Olivia Williams</h3>
                             <div class="flex items-center justify-between">
                                 <p class="text-gray-500 text-sm">Guest</p>
@@ -123,7 +120,7 @@
                             class="absolute -top-0 -left-5 bg-gradient-to-r from-purple-500 to-purple-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
                         </div> -->
-                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                        <div class="mx-8 mb-4 border-b border-gray-100 pb-3">
                             <h3 class="text-xl font-bold text-gray-800">Olivia Williams</h3>
                             <div class="flex items-center justify-between">
                                 <p class="text-gray-500 text-sm">Guest</p>
@@ -155,7 +152,7 @@
                     <Icon name="lucide:chevron-left" width="24" height="24" class="textColor !size-6" />
                 </button>
                 <button @click="goToNext"
-                    class="absolute right-2 top-1/2 -translate-y-1/2  p-3 rounded-full bg-white shadow-xl hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
+                    class="absolute -right-10 top-1/2 -translate-y-1/2  p-3 rounded-full bg-white shadow-xl hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
                     <Icon name="lucide:chevron-right" width="24" height="24" class="textColor !size-6" />
                 </button>
 

@@ -30,7 +30,7 @@
 
                     <!-- Book Now Button -->
                     <button
-                        class="bgGradient text-white px-8 ml-2 py-4 justify-center rounded-lg font-semibold transition-colors duration-200 flex items-center space-x-2">
+                        class="bgGradient hover:bg-[#5790a1] hover:scale-110 transition-all duration-300 text-white px-8 ml-2 py-4 justify-center rounded-lg font-semibold transition-colors duration-200 flex items-center space-x-2">
                         <span>Book Now </span>
                         <Icon name="lucide:arrow-right" class="!size-4" />
                     </button>

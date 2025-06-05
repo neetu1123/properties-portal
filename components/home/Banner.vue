@@ -10,7 +10,7 @@
                         <h1 class="text-4xl md:text-6xl font-bold mb-4">A Curated Vacation</h1>
                         <p class="text-lg md:text-xl mb-8 max-w-2xl">Your Perfect Inlet Beach Escape, Thoughtfully Designed for Unforgettable Stays.</p>
                         <button
-                            class="bgGradient text-white px-8 py-3 rounded-full font-medium text-lg transition-colors">
+                            class="bgGradient hover:bg-[#5790a1] hover:scale-110 duration-300 text-white px-8 py-3 rounded-full font-medium text-lg transition-colors">
                             Book Now
                         </button>
                     </div>

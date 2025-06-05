@@ -15,7 +15,7 @@
       <div class="flex justify-center mt-8">
 
         <button
-          class="bgGradient text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center">
+          class="bgGradient hover:bg-[#5790a1] hover:scale-110 transition-all duration-300 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center">
          Show All
           <Icon name="lucide:arrow-right" width="20" height="20" class="!size-5 ml-2" />
         </button>

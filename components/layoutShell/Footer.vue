@@ -101,7 +101,7 @@
 
                     <div class="flex items-center space-x-4">
                         <button
-                            class="bgGradient text-white px-6 py-2 rounded-full font-medium transition-colors inline-flex items-center">
+                            class="bgGradient hover:bg-[#5790a1] hover:scale-110 duration-300 text-white px-6 py-2 rounded-full font-medium transition-colors inline-flex items-center">
                             <Icon name="lucide:calendar" height="16" class="mr-2" />
                             Book Now
                         </button>
