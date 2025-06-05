@@ -4,19 +4,22 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Company Info -->
                 <div class="space-y-6">
+                      <div>
+                        <img src="/A_Curated_Vacation_logo_page-0001__1_-removebg-preview.png" class="h-24" alt="">
+                    </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-4">A Curated Vacation
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                            The perfect headquarters for your Smoky Mountain Vacation! Nestled in the Spur of
-                            Gatlinburg.
+                           Your Ultimate Inlet Beach Escape — Thoughtfully Curated for Relaxation, Comfort, and Unforgettable Moments by the Sea
                         </p>
                     </div>
 
                     <div class="flex items-center text-gray-300">
                         <Icon name="lucide:map-marker" width="20" height="name" lucide="text-orange-500 mr-3" />
-                        <span>Gatlinburg, Tennessee</span>
+                        <span> Inlet Beach, FL </span>
                     </div>
+                  
                 </div>
 
                 <!-- Links -->

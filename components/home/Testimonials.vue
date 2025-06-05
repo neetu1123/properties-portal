@@ -6,7 +6,7 @@
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">
                     Guest <span class="lightText">Reviews</span>
                 </h2>
-               
+
             </div>
             <div class="relative mb-16">
                 <div
@@ -128,8 +128,8 @@
                             </div>
                         </div>
                         <div class="relative">
-                                <Icon name="lucide:quote" width="24" height="24"
-                                    class="text-gray-200 absolute -top-2 -left-1" />
+                            <Icon name="lucide:quote" width="24" height="24"
+                                class="text-gray-200 absolute -top-2 -left-1" />
                             <p class="text-gray-700 mb-3 pt-3 italic text-sm md:text-base pl-6">Very nice condo! Special
                                 places arranged for the transfer
                                 from the airport and everything went very smoothly. The condo was large and beautiful,
@@ -147,18 +147,18 @@
                 </div>
 
                 <!-- Navigation arrows -->
-                <button @click="goToPrev"
+                <!-- <button @click="goToPrev"
                     class="absolute left-2 top-1/2 -translate-y-1/2  p-3 rounded-full shadow-xl bg-white hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
                     <Icon name="lucide:chevron-left" width="24" height="24" class="textColor !size-6" />
                 </button>
                 <button @click="goToNext"
-                    class="absolute -right-10 top-1/2 -translate-y-1/2  p-3 rounded-full bg-white shadow-xl hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
+                    class="absolute right-2 top-1/2 -translate-y-1/2  p-3 rounded-full bg-white shadow-xl hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
                     <Icon name="lucide:chevron-right" width="24" height="24" class="textColor !size-6" />
-                </button>
+                </button> -->
 
                 <!-- Navigation dots (mobile friendly) -->
                 <div class="absolute bottom-16 left-0 right-0 flex justify-center space-x-2">
-                    <button v-for="(_, index) in 3" :key="index" @click="goToSlide(index)"
+                    <button v-for="(_, index) in 4" :key="index" @click="goToSlide(index)"
                         class="w-3 h-3 rounded-full transition-colors duration-200 focus:outline-none"
                         :class="currentIndex === index ? 'bg-[#4a8a9e]' : 'bg-gray-300'"></button>
                 </div>
@@ -168,10 +168,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+
 
 const sliderRef = ref<HTMLElement | null>(null)
 const currentIndex = ref(0)
+const autoSlideInterval = ref<number | null>(null)
 
 function updateSlider() {
     if (!sliderRef.value) return
@@ -188,41 +189,78 @@ function updateSlider() {
 }
 
 function goToSlide(index: number) {
-    if (index >= 0 && index <= 2) { // Assuming 3 cards
+    if (index >= 0 && index <= 3) { // Updated to 4 cards
         currentIndex.value = index
         updateSlider()
+        resetAutoSlide() // Reset the timer when manually changing slides
     }
 }
 
-function goToNext() {
-    if (!sliderRef.value) return
-
-    const cards = sliderRef.value.querySelectorAll('.review-card')
-    if (currentIndex.value < cards.length - 1) {
-        currentIndex.value++
+// Start automatic slideshow
+function startAutoSlide() {
+    autoSlideInterval.value = window.setInterval(() => {
+        const cards = sliderRef.value?.querySelectorAll('.review-card') || []
+        if (currentIndex.value < cards.length - 1) {
+            currentIndex.value++
+        } else {
+            currentIndex.value = 0 // Loop back to the first slide
+        }
         updateSlider()
+    }, 2000) // Change slide every 5 seconds
+}
+
+// Reset the automatic slideshow timer
+function resetAutoSlide() {
+    if (autoSlideInterval.value !== null) {
+        clearInterval(autoSlideInterval.value)
+        startAutoSlide()
     }
 }
 
-function goToPrev() {
-    if (currentIndex.value > 0) {
-        currentIndex.value--
-        updateSlider()
-    }
-}
+// function goToNext() {
+//     if (!sliderRef.value) return
+
+//     const cards = sliderRef.value.querySelectorAll('.review-card')
+//     if (currentIndex.value < cards.length - 1) {
+//         currentIndex.value++
+//     } else {
+//         currentIndex.value = 0 // Loop to the beginning
+//     }
+//     updateSlider()
+//     resetAutoSlide()
+// }
+
+// function goToPrev() {
+//     if (currentIndex.value > 0) {
+//         currentIndex.value--
+//     } else {
+//         const cards = sliderRef.value?.querySelectorAll('.review-card') || []
+//         currentIndex.value = cards.length - 1 // Loop to the end
+//     }
+//     updateSlider()
+//     resetAutoSlide()
+// }
 
 onMounted(() => {
     // Make sure references are properly set after component is mounted
     updateSlider()
+    // Start automatic slideshow
+    startAutoSlide()
+})
+
+onBeforeUnmount(() => {
+    // Clean up interval when component is unmounted
+    if (autoSlideInterval.value !== null) {
+        clearInterval(autoSlideInterval.value)
+    }
 })
 </script>
 
 <style scoped>
-
-
 .review-card {
     scroll-snap-align: start;
     flex: 0 0 85%;
+    transition: transform 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -230,6 +268,18 @@ onMounted(() => {
         flex: 0 0 40%;
         max-width: 480px;
     }
+}
+
+.review-slider {
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+.review-slider::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
 .lightText {
