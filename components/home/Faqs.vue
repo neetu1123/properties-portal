@@ -28,39 +28,39 @@
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "How close is the property to the beach?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Our home is just a short walk or bike ride from the beautiful white sands of Inlet Beach—perfect for morning strolls or sunset views.",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "What amenities are included in the rental?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "You’ll enjoy a fully equipped kitchen, high-speed Wi-Fi, smart TVs, a washer/dryer, outdoor seating, and complimentary beach gear. Some properties may also include a private pool or hot tub.",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Are there restaurants and shops nearby?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Yes! You’re minutes away from 30Avenue, Rosemary Beach, and other nearby dining, shopping, and entertainment options.",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: " Is the property family-friendly?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Absolutely! We welcome families and provide family-friendly features like board games, bunk beds (in some units), and safe outdoor spaces.",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Do you allow pets?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Some of our homes are pet-friendly with prior approval and a pet fee. Please contact us with details about your pet before booking.",
   },
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "What is your cancellation policy?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "We offer a flexible cancellation policy depending on the season and listing platform. Please check your reservation details or contact us directly for the most accurate info.",
   },
   // More questions...
 ]

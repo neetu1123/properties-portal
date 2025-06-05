@@ -39,7 +39,7 @@
                 <!-- Right Image -->
                 <div class="relative">
                     <div class="rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&crop=center"
+                        <img src="/ABout Us_11zon.jpg"
                             alt="Luxury vacation rental with pool" class="w-full h-full object-cover" />
                         <!-- Partner Badges -->
                         <div class="absolute -bottom-10 right-52 flex space-x-6">

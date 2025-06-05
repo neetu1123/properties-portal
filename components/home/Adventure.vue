@@ -4,7 +4,7 @@
             <!-- Header -->
             <div class="text-center mb-12">
                 <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                    Choose Your Next Adventure to Attractions
+                    Attractions
                 </h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Fun for All Ages — From Sandy Shores to Local Adventures
@@ -64,29 +64,29 @@
 const currentIndex = ref(0)
 const destinations = [
     {
-        name: "Bainbridge Island",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        name: " Rosemary Beach",
+        image: "/Rosemary Beach.jpg"
     },
     {
-        name: "Palm Springs",
-        image: "https://images.unsplash.com/photo-1551966775-a4ddc8df052b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        name: "Timpoochee Trail",
+        image: "/Timpoochee Trail_11zon.jpg"
     },
     {
-        name: "Tampa",
-        image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        name: "Camp Helen State Park",
+        image: "/Camp Helen State Park_11zon.webp"
     },
     {
-        name: "Nashville",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        name: "30Avenue",
+        image: "/30Avenue.jpg"
     },
     {
-        name: "Big Bear",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        name: "Alys Beach",
+        image: "/Alys Beach_11zon.jpg"
     },
     {
-        name: "Miami Beach",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-    }
+        name: " Rosemary Beach",
+        image: "/Rosemary Beach.jpg"
+    },
 ]
 
 function nextSlide() {

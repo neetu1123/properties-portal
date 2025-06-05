@@ -1,11 +1,13 @@
 <template>
-    <div class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div class="py-16 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center items-center flex-col lg:flex-row gap-8 lg:gap-16">
                 <!-- Image Section -->
-                <div class="order-2 lg:order-1">
-                    <img src="/30285_20241213230538 (1).jpg"
-                        alt="Happy couple on beach" class="w-full h-[38rem] object-cover rounded-2xl shadow-xl" />
+                <div class="order-2 lg:order-1 w-full lg:w-1/2 max-w-xl">
+                    <div class="rounded-2xl shadow-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <img src="/8ed9dce6-37a4-4b04-a6b7-392026f2b424.jpg" alt="Happy couple on beach"
+                            class="w-full h-auto max-h-[38rem] object-cover" />
+                    </div>
                 </div>
 
                 <!-- Content Section -->
@@ -19,15 +21,23 @@
                         <!-- <p class="text-gray-500 text-lg font-medium mb-8">THE PERFECT PLACE TO STAY...</p> -->
                     </div>
 
-                    <div class="space-y-6">
+                    <div class="space-y-6 max-w-2xl">
                         <p class="text-gray-700 leading-relaxed">
-                            Lorem ipsum dolor sit , minus magnam accusantium iste perspiciatis, mollitia magni obcaecati ipsa vel labore enim ex consequatur, veniam explicabo in perferendis quod. Reiciendis at consequatur, laboriosam sed hic quos facere est necessitatibus, saepe ut, consequuntur voluptatibus? Architecto, alias sapiente!
+                            Lorem ipsum dolor sit , minus magnam accusantium iste perspiciatis, mollitia magni obcaecati
+                            ipsa vel labore enim ex consequatur, veniam explicabo in perferendis quod. Reiciendis at
+                            consequatur, laboriosam sed hic quos facere est necessitatibus, saepe ut, consequuntur
+                            voluptatibus? Architecto, alias sapiente!
                         </p>
                         <p class="text-gray-700 leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur et obcaecati dolearum eummaiores repellendus, minus magnam accusantium iste perspiciatis, mollitia magni obcaecati ipsa vel labore enim ex consequatur, veniam explicabo in perferendis quod. Reiciendis at consequatur, laboriosam sed hic quos facere est necessitatibus, saepe ut, consequuntur voluptatibus? Architecto, alias sapiente!
+                            Lorem ipsum dolor sit amet consectetur et obcaecati dolearum eummaiores repellendus, minus
+                            magnam accusantium iste perspiciatis, mollitia magni obcaecati ipsa vel labore enim ex
+                            consequatur, veniam explicabo in perferendis quod. Reiciendis at consequatur, laboriosam sed
+                            hic quos facere est necessitatibus, saepe ut, consequuntur voluptatibus? Architecto, alias
+                            sapiente!
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, soluta hic rem ex laudantium consectetur! Repellat accusantium maxime mollitia blanditiis.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, soluta hic rem ex
+                            laudantium consectetur! Repellat accusantium maxime mollitia blanditiis.
                         </p>
                     </div>
 

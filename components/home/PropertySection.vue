@@ -4,7 +4,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Image Section -->
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&crop=center"
+                    <img src="/Property Section_11zon.jpg"
                         alt="Ocean View Terrace" class="w-full h-full object-cover rounded-lg shadow-2xl" />
 
                 </div>
