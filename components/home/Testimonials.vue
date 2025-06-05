@@ -1,9 +1,8 @@
 <template>
-    <!-- Testimonials Section -->
-    <div class="bg-gray-50 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="py-16">
+        <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <p class="lightText text-sm font-medium mb-2">testimonials</p>
+                <p class="lightText text-sm font-medium mb-2 uppercase tracking-wider">what our guests say</p>
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">
                     Guest <span class="lightText">Reviews</span>
                 </h2>
@@ -12,91 +11,159 @@
                     unforgettable memories created by the staff at Special Places of Costa Rica.
                 </p>
             </div>
+            <div class="relative mb-16">
+                <div
+                    class="bg-gradient-to-r from-[#4a8a9e] to-[#5ea8bd] transform rounded-4xl px-24 py-64 max-w-4xl mx-auto relative overflow-hidden shadow-2xl">
+                    <!-- Subtle pattern overlay -->
+                    <div class="absolute inset-0 opacity-10"
+                        style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E');">
+                    </div>
+                </div>
 
-            <div class="relative">
-                <div class="bg-[#4a8a9e] transform rounded-3xl p-20 relative overflow-hidden">
-                    <div class="flex justify-center items-center space-x-8">
-                        <!-- Previous testimonial (partially visible) -->
-                        <div class="hidden lg:block w-80 opacity-50 transform scale-95">
-                            <div class="bg-white rounded-2xl p-6 shadow-lg">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-                                            <div class="w-4 h-4 bg-yellow-400 rounded"></div>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h4 class="font-semibold text-gray-900">{{ testimonials[(currentSlide - 1 + 3) %
-                                            3].name }}</h4>
-                                        <p class="text-gray-500 text-sm">{{ testimonials[(currentSlide - 1 + 3) %
-                                            3].role }}</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600 text-sm mb-4 line-clamp-4">
-                                    {{ testimonials[(currentSlide - 1 + 3) % 3].text }}
-                                </p>
-                                <div class="flex space-x-1">
-                                    <span v-for="star in 5" :key="star" class="text-yellow-400">★</span>
-                                </div>
+                <!-- Slider container -->
+                <div ref="sliderRef"
+                    class="review-slider absolute top-24 flex overflow-x-hidden gap-8 pb-8 px-6 md:px-10 z-10">
+                    <!-- Review Card 1 -->
+                    <div
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105  border border-gray-100">
+                        <!-- <div
+                            class="absolute -top-0 -left-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
+                            <Icon name="lucide:user" class="!size-6" width="28" height="28" />
+                        </div> -->
+                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                            <h3 class="text-xl font-bold text-gray-800">Ethan Parker</h3>
+                            <div class="flex items-center justify-between">
+                                <p class="text-gray-500 text-sm">Guest</p>
+
                             </div>
                         </div>
-
-                        <!-- Current testimonial (center) -->
-                        <div class="w-80 transform scale-100">
-                            <div class="bg-white rounded-2xl p-6 shadow-lg">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-                                            <div class="w-4 h-4 bg-yellow-400 rounded"></div>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h4 class="font-semibold text-gray-900">{{ testimonials[currentSlide].name }}
-                                        </h4>
-                                        <p class="text-gray-500 text-sm">{{ testimonials[currentSlide].role }}</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600 text-sm mb-4">
-                                    {{ testimonials[currentSlide].text }}
-                                </p>
-                                <div class="flex space-x-1">
-                                    <span v-for="star in 5" :key="star" class="text-yellow-400">★</span>
-                                </div>
-                            </div>
+                        <div class="relative">
+                            <Icon name="lucide:quote" width="24" height="24"
+                                class="text-gray-200 absolute -top-2 -left-1" />
+                            <p class="text-gray-700 mb-3 pt-3 italic text-sm md:text-base pl-6">La Casa Raja e molto
+                                bella e comoda. Noi cavamo in 6 con
+                                un cagnolino e siamo stati benissimo. Molto pulita e spaziosa. Tutt' gli ambienti sono
+                                comodi e piacevoli...</p>
+                            <Icon name="lucide:format-quote-close" width="24" height="24"
+                                class="text-gray-200 absolute bottom-0 right-0" />
                         </div>
-
-                        <!-- Next testimonial (partially visible) -->
-                        <div class="hidden lg:block w-80 opacity-50 transform scale-95">
-                            <div class="bg-white rounded-2xl p-6 shadow-lg">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-                                            <div class="w-4 h-4 bg-yellow-400 rounded"></div>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h4 class="font-semibold text-gray-900">{{ testimonials[(currentSlide + 1) %
-                                            3].name }}</h4>
-                                        <p class="text-gray-500 text-sm">{{ testimonials[(currentSlide + 1) % 3].role }}
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600 text-sm mb-4 line-clamp-4">
-                                    {{ testimonials[(currentSlide + 1) % 3].text }}
-                                </p>
-                                <div class="flex space-x-1">
-                                    <span v-for="star in 5" :key="star" class="text-yellow-400">★</span>
-                                </div>
+                        <div class="mt-4 pt-3 border-t border-gray-100 flex justify-end">
+                            <div class="flex text-yellow-400">
+                                <Icon v-for="i in 5" :key="i" name="lucide:star" width="16" height="16" class="ml-1" />
                             </div>
                         </div>
                     </div>
 
-                    <!-- Navigation dots -->
-                    <div class="flex justify-center mt-8 space-x-2">
-                        <button v-for="index in 3" :key="index - 1" @click="goToSlide(index - 1)"
-                            class="w-3 h-3 rounded-full transition-colors duration-200"
-                            :class="currentSlide === index - 1 ? 'bg-[#1B7895]' : 'bg-gray-300'"></button>
+                    <!-- Review Card 2 -->
+                    <div
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105 z-10 border border-gray-100">
+                        <!-- <div
+                            class="absolute -top-1 -left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
+                            <Icon name="lucide:user" class="!size-6" width="28" height="28" />
+                        </div> -->
+                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                            <h3 class="text-xl font-bold text-gray-800">Ava Thompson</h3>
+                            <div class="flex items-center justify-between">
+                                <p class="text-gray-500 text-sm">Guest</p>
+
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <Icon name="lucide:quote" width="24" height="24"
+                                class="text-gray-200 absolute -top-2 -left-1" />
+                            <p class="text-gray-700 mb-3 pt-3 italic text-sm md:text-base pl-6">Nosebbe lugar ! Una
+                                vista espectacular definitivamente en
+                                el paraíso, muy confortable y muy amables y seguro y mucha privacidad súper recomendado
+                                perfecta ubicación cerca de muchas playas...</p>
+                            <Icon name="lucide:format-quote-close" width="24" height="24"
+                                class="text-gray-200 absolute bottom-0 right-0" />
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-100 flex justify-end">
+                            <div class="flex text-yellow-400">
+                                <Icon v-for="i in 5" :key="i" name="lucide:star" width="16" height="16" class="ml-1" />
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Review Card 3 -->
+                    <div
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105 z-10 border border-gray-100">
+                        <!-- <div
+                            class="absolute -top-0 -left-5  bg-gradient-to-r from-purple-500 to-purple-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
+                            <Icon name="lucide:user" class="!size-6" width="28" height="28" />
+                        </div> -->
+                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                            <h3 class="text-xl font-bold text-gray-800">Olivia Williams</h3>
+                            <div class="flex items-center justify-between">
+                                <p class="text-gray-500 text-sm">Guest</p>
+
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <Icon name="lucide:quote" width="24" height="24"
+                                class="text-gray-200 absolute -top-2 -left-1" />
+                            <p class="text-gray-700 mb-3 pt-3 italic text-sm md:text-base pl-6">Very nice condo! Special
+                                places arranged for the transfer
+                                from the airport and everything went very smoothly. The condo was large and beautiful,
+                                and
+                                the third floor allowed for a lovely view...</p>
+                            <Icon name="lucide:format-quote-close" width="24" height="24"
+                                class="text-gray-200 absolute bottom-0 right-0" />
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-100 flex justify-end">
+                            <div class="flex text-yellow-400">
+                                <Icon v-for="i in 5" :key="i" name="lucide:star" width="16" height="16" class="ml-1" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review Card 3 -->
+                    <div
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105 z-10 border border-gray-100">
+                        <!-- <div
+                            class="absolute -top-0 -left-5 bg-gradient-to-r from-purple-500 to-purple-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
+                            <Icon name="lucide:user" class="!size-6" width="28" height="28" />
+                        </div> -->
+                        <div class="ml-8 mb-4 border-b border-gray-100 pb-3">
+                            <h3 class="text-xl font-bold text-gray-800">Olivia Williams</h3>
+                            <div class="flex items-center justify-between">
+                                <p class="text-gray-500 text-sm">Guest</p>
+
+                            </div>
+                        </div>
+                        <div class="relative">
+                                <Icon name="lucide:quote" width="24" height="24"
+                                    class="text-gray-200 absolute -top-2 -left-1" />
+                            <p class="text-gray-700 mb-3 pt-3 italic text-sm md:text-base pl-6">Very nice condo! Special
+                                places arranged for the transfer
+                                from the airport and everything went very smoothly. The condo was large and beautiful,
+                                and
+                                the third floor allowed for a lovely view...</p>
+                            <Icon name="lucide:format-quote-close" width="24" height="24"
+                                class="text-gray-200 absolute bottom-0 right-0" />
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-100 flex justify-end">
+                            <div class="flex text-yellow-400">
+                                <Icon v-for="i in 5" :key="i" name="lucide:star" width="16" height="16" class="ml-1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation arrows -->
+                <button @click="goToPrev"
+                    class="absolute left-2 top-1/2 -translate-y-1/2  p-3 rounded-full shadow-xl bg-white hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
+                    <Icon name="lucide:chevron-left" width="24" height="24" class="textColor !size-6" />
+                </button>
+                <button @click="goToNext"
+                    class="absolute right-2 top-1/2 -translate-y-1/2  p-3 rounded-full bg-white shadow-xl hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
+                    <Icon name="lucide:chevron-right" width="24" height="24" class="textColor !size-6" />
+                </button>
+
+                <!-- Navigation dots (mobile friendly) -->
+                <div class="absolute bottom-16 left-0 right-0 flex justify-center space-x-2">
+                    <button v-for="(_, index) in 3" :key="index" @click="goToSlide(index)"
+                        class="w-3 h-3 rounded-full transition-colors duration-200 focus:outline-none"
+                        :class="currentIndex === index ? 'bg-[#4a8a9e]' : 'bg-gray-300'"></button>
                 </div>
             </div>
         </div>
@@ -104,49 +171,91 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 
-const currentSlide = ref(1)
-const testimonials = [
-    {
-        id: 1,
-        name: "Ethan Parker",
-        role: "Guest",
-        text: "La Casa Roja è molto bella e comoda. Noi eravamo in 6 con un cagnolino e siamo stati benissimo. Molto pulita e spaziosa. Tutti gli ambienti sono comodi e piacevoli. La piscina è molto comoda per rinfrescarsi al rientro dal mare. Ogni giorno ci facevano visita ...",
-        rating: 5
-    },
-    {
-        id: 2,
-        name: "Ava Thompson",
-        role: "Guest",
-        text: "ncreible lugar ! Una vista espectacular definitivamente en el paraiso , muy confortable y muy amables y seguro y mucha privacidad super recomendado perfecta ubicacion cerca de muchas playas de guanacaste",
-        rating: 5
-    },
-    {
-        id: 3,
-        name: "Olivia Williams",
-        role: "Guest",
-        text: "Very nice condo! Special places arranged for the transfer from the airport and everything went very smoothly. The condo was large and beautiful, and the third floor allowed for a lovely view right at the level of the tree canopy. The pools and ...",
-        rating: 5
-    }
-]
+const sliderRef = ref<HTMLElement | null>(null)
+const currentIndex = ref(0)
 
-function nextSlide() {
-    currentSlide.value = (currentSlide.value + 1) % 3;
+function updateSlider() {
+    if (!sliderRef.value) return
+
+    const slider = sliderRef.value
+    const cards = slider.querySelectorAll('.review-card')
+    if (!cards.length) return
+
+    const cardWidth = (cards[0] as HTMLElement).offsetWidth + 32 // width + gap
+    slider.scrollTo({
+        left: currentIndex.value * cardWidth,
+        behavior: 'smooth'
+    })
 }
-function prevSlide() {
-    currentSlide.value = (currentSlide.value - 1 + 3) % 3;
-}
+
 function goToSlide(index: number) {
-    currentSlide.value = index;
+    if (index >= 0 && index <= 2) { // Assuming 3 cards
+        currentIndex.value = index
+        updateSlider()
+    }
 }
 
+function goToNext() {
+    if (!sliderRef.value) return
+
+    const cards = sliderRef.value.querySelectorAll('.review-card')
+    if (currentIndex.value < cards.length - 1) {
+        currentIndex.value++
+        updateSlider()
+    }
+}
+
+function goToPrev() {
+    if (currentIndex.value > 0) {
+        currentIndex.value--
+        updateSlider()
+    }
+}
+
+onMounted(() => {
+    // Make sure references are properly set after component is mounted
+    updateSlider()
+})
 </script>
 
 <style scoped>
-.line-clamp-4 {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
+
+.review-card {
+    scroll-snap-align: start;
+    flex: 0 0 85%;
+}
+
+@media (min-width: 768px) {
+    .review-card {
+        flex: 0 0 40%;
+        max-width: 480px;
+    }
+}
+
+.lightText {
+    color: #4a8a9e;
+}
+
+/* Add subtle animation for the quote marks */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.text-gray-200.absolute {
+    opacity: 0.5;
+    animation: float 3s ease-in-out infinite;
 }
 </style>

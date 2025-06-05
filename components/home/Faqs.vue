@@ -14,9 +14,10 @@
       </div>
       <div class="flex justify-center mt-8">
 
-        <button class="flex items-center bgGradient text-white px-6 py-2 rounded-lg">
-          Show All
-          <Icon name="lucide:arrow-right"/>
+        <button
+          class="bgGradient text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center">
+         Show All
+          <Icon name="lucide:arrow-right" width="20" height="20" class="!size-5 ml-2" />
         </button>
       </div>
     </div>
@@ -31,31 +32,31 @@ const faqs = [
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
-    {
+  {
     id: 1,
     question: "What's the best thing about Switzerland?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
-    {
+  {
     id: 1,
     question: "What's the best thing about Switzerland?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
-    {
+  {
     id: 1,
     question: "What's the best thing about Switzerland?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
-    {
+  {
     id: 1,
     question: "What's the best thing about Switzerland?",
     answer:
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
-    {
+  {
     id: 1,
     question: "What's the best thing about Switzerland?",
     answer:

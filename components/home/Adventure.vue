@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto">
             <!-- Header -->
             <div class="text-center mb-12">
@@ -14,14 +14,14 @@
             <!-- Destinations Slider -->
             <div class="relative">
                 <!-- Navigation Buttons -->
-                <button @click="prevSlide"
-                    class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10">
-                    <Icon name="lucide:circle-chevron-left" class="!size-8 lightText" width="24" height="24" />
+                 <button @click="prevSlide"
+                    class="absolute left-2 top-1/2 -translate-y-1/2  p-3 rounded-full bg-white shadow-xl hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
+                    <Icon name="lucide:chevron-left" width="24" height="24" class="textColor !size-6" />
                 </button>
 
-                <button @click="nextSlide"
-                    class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 ">
-                    <Icon name="lucide:circle-chevron-right" class="!size-8 lightText" width="24" height="24" />
+                 <button @click="nextSlide"
+                    class="absolute right-2 top-1/2 -translate-y-1/2  p-3 rounded-full bg-white shadow-xl hover:bg-gray-50 hover:scale-110 transition-all duration-300 z-20 focus:outline-none focus:ring-2 focus:ring-blue-300 hidden md:flex items-center justify-center">
+                    <Icon name="lucide:chevron-right" width="24" height="24" class="textColor !size-6" />
                 </button>
 
                 <!-- Destinations Grid -->

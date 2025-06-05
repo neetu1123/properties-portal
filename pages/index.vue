@@ -3,7 +3,7 @@
         <HomeBanner />
         <HomePropertySection />
         <HomeBusiness />
-        <HomeTestimonials2 />
+        <HomeTestimonials />
         <HomeModernFacility />
         <HomeAdventure />
         <HomeTreasureStay />
