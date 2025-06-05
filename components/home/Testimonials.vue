@@ -22,7 +22,7 @@
                     class="review-slider absolute top-24 flex overflow-x-hidden gap-8 pb-8 px-6 md:px-10 z-10">
                     <!-- Review Card 1 -->
                     <div
-                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105  border border-gray-100">
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transition-transform duration-500 hover:rounded-none hover:scale-110 border border-gray-100">
                         <!-- <div
                             class="absolute -top-0 -left-5 bg-gradient-to-r from-blue-500 to-blue-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
@@ -35,8 +35,8 @@
                             </div>
                         </div>
                         <div class="relative">
-                            <Icon name="lucide:quote" width="24" height="24"
-                                class="text-gray-200 absolute -top-2 -left-1" />
+                            <!-- <Icon name="lucide:quote" width="24" height="24"
+                                class="text-gray-200 absolute -top-2 -left-1" /> -->
                             <p class="text-gray-700 mb-3 pt-3 italic text-sm md:text-base pl-6">La Casa Raja e molto
                                 bella e comoda. Noi cavamo in 6 con
                                 un cagnolino e siamo stati benissimo. Molto pulita e spaziosa. Tutt' gli ambienti sono
@@ -53,7 +53,7 @@
 
                     <!-- Review Card 2 -->
                     <div
-                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105 z-10 border border-gray-100">
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transition-transform duration-500 hover:rounded-none hover:scale-110 border border-gray-100">
                         <!-- <div
                             class="absolute -top-1 -left-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
@@ -84,7 +84,7 @@
 
                     <!-- Review Card 3 -->
                     <div
-                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105 z-10 border border-gray-100">
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transition-transform duration-500 hover:rounded-none hover:scale-110 border border-gray-100">
                         <!-- <div
                             class="absolute -top-0 -left-5  bg-gradient-to-r from-purple-500 to-purple-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
@@ -115,7 +115,7 @@
                     </div>
                     <!-- Review Card 3 -->
                     <div
-                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transform transition-all duration-300 hover:scale-105 z-10 border border-gray-100">
+                        class="review-card relative bg-white p-6 rounded-lg shadow-xl transition-transform duration-500 hover:rounded-none hover:scale-110 border border-gray-100">
                         <!-- <div
                             class="absolute -top-0 -left-5 bg-gradient-to-r from-purple-500 to-purple-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                             <Icon name="lucide:user" class="!size-6" width="28" height="28" />
@@ -260,7 +260,9 @@ onBeforeUnmount(() => {
 .review-card {
     scroll-snap-align: start;
     flex: 0 0 85%;
-    transition: transform 0.3s ease;
+    transition: all 0.4s ease;
+    transform-origin: center;
+    backface-visibility: hidden;
 }
 
 @media (min-width: 768px) {
@@ -270,6 +272,10 @@ onBeforeUnmount(() => {
     }
 }
 
+.review-card:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 10px 10px -5px rgb(0 0 0 / 4%);
+}
+
 .review-slider {
     -ms-overflow-style: none;
     /* Hide scrollbar for IE and Edge */
@@ -277,10 +283,6 @@ onBeforeUnmount(() => {
     /* Hide scrollbar for Firefox */
 }
 
-.review-slider::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for Chrome, Safari and Opera */
-}
 
 .lightText {
     color: #4a8a9e;
