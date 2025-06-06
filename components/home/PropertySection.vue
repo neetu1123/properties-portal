@@ -13,10 +13,10 @@
                 <div>
                     <div class="mb-6">
                         <h3 class="lightText font-semibold text-lg mb-2">Property Details</h3>
-                        <h2 class="text-4xl font-bold text-gray-900 mb-4">Ocean View Bliss</h2>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4">A Curated Vacation</h2>
                         <div class="flex items-center text-gray-600 mb-6">
-                            <Icon name="lucide:map-marker" width="20" height="20" class="mr-2" />
-                            <span>53 Sheridan Ave, Seaside Heights, NJ 08751, USA</span>
+                            <Icon name="lucide:map-pin" width="20" height="20" class="mr-2 !size-4" />
+                            <span>Inlet Beach, FL</span>
                         </div>
                     </div>
 
@@ -37,22 +37,22 @@
                     <!-- Property Features -->
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-4 border-t border-b border-gray-200 py-6">
                         <div class="text-center">
-                            <Icon name="lucide:bed" width="32" height="32" class="mx-auto !size-6 mb-2 textColor" />
+                            <Icon name="lucide:bed" width="32" height="32" class="mx-auto !size-7 mb-2 textColor" />
                             <p class="font-semibold text-gray-900">5 Bedrooms</p>
                         </div>
                         <div class="text-center">
                             <Icon name="lucide:shower-head" width="32" height="32"
-                                class="mx-auto !size-6 mb-2 textColor" />
+                                class="mx-auto !size-7 mb-2 textColor" />
                             <p class="font-semibold text-gray-900">3.5 Baths</p>
                         </div>
                         <div class="text-center">
                             <Icon name="lucide:shower-head" width="32" height="32"
-                                class="mx-auto !size-6 mb-2 textColor" />
+                                class="mx-auto !size-7 mb-2 textColor" />
                             <p class="font-semibold text-gray-900">1 Outside Shower</p>
                         </div>
                         <div class="text-center">
                             <Icon name="lucide:contact-round" width="32" height="32"
-                                class="mx-auto !size-6 mb-2 textColor" />
+                                class="mx-auto !size-7 mb-2 textColor" />
                             <p class="font-semibold text-gray-900">12 Guests</p>
                         </div>
                         <div class="text-center">

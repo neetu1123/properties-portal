@@ -15,8 +15,8 @@
                         </p>
                     </div>
 
-                    <div class="flex items-center text-gray-300">
-                        <Icon name="lucide:map-marker" width="20" height="name" lucide="text-orange-500 mr-3" />
+                    <div class="flex items-center space-x-2 text-gray-300">
+                        <Icon name="lucide:map-pin" lucide="!size-6" />
                         <span> Inlet Beach, FL </span>
                     </div>
                   

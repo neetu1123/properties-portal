@@ -35,7 +35,7 @@
                             hic quos facere est necessitatibus, saepe ut, consequuntur voluptatibus? Architecto, alias
                             sapiente!
                         </p>
-                        <p>
+                        <p class="text-gray-700 leading-relaxed">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, soluta hic rem ex
                             laudantium consectetur! Repellat accusantium maxime mollitia blanditiis.
                         </p>
