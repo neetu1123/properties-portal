@@ -5,18 +5,24 @@
             <div class="flex  items-center h-24">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <h1 class="">
-                        <img src="/A Curated Vacation logo_page-0001.jpg" class="h-20" alt="">
-                    </h1>
+                    <NuxtLink to="/">
+                        <h1 class="">
+                            <img src="/A Curated Vacation logo_page-0001.jpg" class="h-20" alt="">
+                        </h1>
+                    </NuxtLink>
                 </div>
                 <div class="flex-1 flex justify-end items-center">
 
                     <!-- Desktop Navigation -->
                     <div class="hidden md:flex items-center space-x-8">
-                        <button class="bg-[#1B7895] hover:bg-[#5790a1] hover:scale-110 duration-300 text-white px-6 py-2 rounded-full font-medium transition-colors">
+                        <button
+                            class="bg-[#1B7895] hover:bg-[#5790a1] hover:scale-110 duration-300 text-white px-6 py-2 rounded-full font-medium transition-colors">
                             Book
                         </button>
-                        <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Location</a>
+                        <NuxtLink to="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/' && 'underline'" >Home
+                        </NuxtLink>
+                        <NuxtLink to="/about" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/about' && 'underline'" >About
+                        </NuxtLink>
                         <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Photos</a>
                         <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Rates</a>
                         <a href="#"
