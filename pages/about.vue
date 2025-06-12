@@ -22,11 +22,6 @@
     <section class="bg-gradient-to-r from-amber-50 to-[#E9F4F6] py-16 pb-28 px-4 lg:px-8">
 
       <div class="max-w-7xl mx-auto">
-        <div class="flex items-center mb-8">
-          <button class="hover:underline" @click="navigateTo('/')">Home</button>
-          <Icon name="lucide:chevron-right" class="" />
-          <button class="textColor underline">About</button>
-        </div>
         <div class="grid lg:grid-cols-2 gap-20 items-center">
           <!-- Left Content -->
           <div class="space-y-8">
@@ -74,10 +69,10 @@
     </section>
 
     <!-- Second Section - Smoky Mountain Cabins -->
-    <section class="relative bgGradient flex items-center justify-center py-20 px-4 lg:px-8">
-      <!-- Background Image Effect -->
-      <div class="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay"
-        style="background-image: url('/photo-1506905925346-21bda4d32df4.avif')"></div>
+    <section
+      class="relative bg-gradient-to-r from-gray-900 to-gray-900 flex items-center justify-center py-20 px-4 lg:px-8">
+      <!-- Background Image Effect with Parallax -->
+      <div class="absolute inset-0 parallax"></div>
       <div class="absolute inset-0 opacity-20"
         style="background-image: url('data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'white\' fill-opacity=\'0.02\'%3E%3Cpath d=\'M20 20c0 11.046-8.954 20-20 20v20h40V20H20z\'/%3E%3C/g%3E%3C/svg%3E')">
       </div>
@@ -106,14 +101,6 @@
           </p>
         </div>
       </div>
-
-      <!-- Decorative elements -->
-      <div class="absolute top-10 left-10 w-20 h-20 rounded-full blur-xl"
-        style="background-color: rgba(255,255,255,0.05)"></div>
-      <div class="absolute bottom-20 right-20 w-32 h-32 rounded-full blur-2xl"
-        style="background-color: rgba(27,120,149,0.1)"></div>
-      <div class="absolute top-1/2 left-1/4 w-16 h-16 rounded-full blur-xl"
-        style="background-color: rgba(0,67,105,0.1)"></div>
     </section>
   </div>
 </template>
@@ -126,3 +113,17 @@ useHead({
   ]
 })
 </script>
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("/original.webp");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  mix-blend-mode: overlay;
+}
+</style>

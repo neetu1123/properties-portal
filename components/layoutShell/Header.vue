@@ -23,7 +23,7 @@
                         </NuxtLink>
                         <NuxtLink to="/about" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/about' && 'underline'" >About
                         </NuxtLink>
-                        <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Photos</a>
+                        <NuxtLink to="/contact-us" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Contact</NuxtLink>
                         <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Rates</a>
                         <a href="#"
                             class="textColor hover:text-lightText font-medium transition-colors">Availability</a>
