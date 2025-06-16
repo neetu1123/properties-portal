@@ -47,7 +47,7 @@
                         </div>
 
                         <h2
-                            class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                            class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-600 transition-colors duration-300">
                             {{ blog.title }}
                         </h2>
 
@@ -56,7 +56,9 @@
                         </p>
 
                         <button
-                            class="inline-flex items-center gap-2 text-gray-700 font-semibold hover:text-blue-600 transition-colors duration-300 group/btn">
+                            class="inline-flex items-center gap-2 text-gray-700 font-semibold hover:text-gray-700 transition-colors duration-300 group/btn"
+                            @click="navigateTo(`/blogs/${index+1}`)"
+                            >
                             <span class="text-sm cool-link uppercase tracking-wider">READ MORE</span>
                             <Icon name="lucide:chevron-right"
                                 class="text-lg group-hover/btn:translate-x-1 transition-transform duration-300" />

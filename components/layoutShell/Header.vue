@@ -24,9 +24,9 @@
                         <NuxtLink to="/about" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/about' && 'underline'" >About
                         </NuxtLink>
                         <NuxtLink to="/contact-us" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Contact</NuxtLink>
-                        <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Rates</a>
-                        <a href="#"
-                            class="textColor hover:text-lightText font-medium transition-colors">Availability</a>
+                        <NuxtLink href="/blogs" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/blogs' && 'underline'">Blogs</NuxtLink>
+                        <NuxtLink href="/categories"
+                            class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/categories' && 'underline'">Categories</NuxtLink>
                         <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Reviews</a>
                     </div>
 
