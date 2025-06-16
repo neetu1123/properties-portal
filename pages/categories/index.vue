@@ -37,7 +37,7 @@
                     <p class="text-gray-600 mb-6 leading-relaxed">
                         {{ category.description }}
                     </p>
-                    <button @click="navigateTo(`/categories/${category}`)"
+                    <button @click="navigateTo(`/categories/${category.id}`)"
                         class="bg-[#1B7895] hover:bg-[#5790a1] text-white px-6 py-3 rounded-full transition duration-300 flex items-center">
                         <Icon name="mdi:information" class="mr-2" />
                         Learn More

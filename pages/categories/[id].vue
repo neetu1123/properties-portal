@@ -1,31 +1,26 @@
 <template>
-    <div class="bg-gray-50">
-        <div class=" px-4 py-8 lg:py-16">
-
+    <div class="">
+        <div class="mt-24 px-4 py-8 lg:py-16">
             <!-- The Gauge Coffeehouse Section -->
-            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 ">
-
+            <div class="flex scale-105  justify-center relative items-center">
                 <!-- Image Section -->
-                <div class="order-2 lg:order-1">
+                <div class="order-2 lg:order-1 ">
                     <div class="relative">
                         <img src="/categories/657a2829e5278.png"
                             alt="The Gauge Coffeehouse outdoor seating area with yellow umbrella, rustic blue building, stone patio, and wooden chairs"
-                            class="w-full h-full rounded-lg shadow-lg fade-in-element">
+                            class="w-full h-full rounded-lg shadow-lg fade-in-element scale-110">
                     </div>
                 </div>
 
                 <!-- Content Section -->
-                <div class="order-1 lg:order-2 relative border border-gray-400 bg-white max-w-xl">
-
+                <div
+                    class="order-1 lg:order-2 relative border border-gray-400 bg-white max-w-2xl scale-105 px-6 py-6 pb-32">
                     <!-- Dotted Pattern Background - positioned on the right side -->
-
-
-                    <div class="relative pr-4 lg:pr-8 ">
+                    <div class="relative pr-4 lg:pr-8">
                         <h1
                             class="text-3xl lg:text-3xl  font-bold text-[#1B7895] mb-6 lg:mb-8 leading-tight fade-in-element">
                             The Gauge Coffeehouse & Humble Pie
                         </h1>
-
                         <p
                             class="text-gray-700 text-base lg:text-lg leading-relaxed lg:leading-relaxed fade-in-element">
                             The Gauge Coffeehouse is a casual place to start your day. They offer
@@ -34,12 +29,13 @@
                             shuttle service to and from the river. Humble Pie Pizza is next door to The
                             Gauge. It's a great place to unwind after a day exploring the area.
                         </p>
-                        <div class="absolute right-0">
-                            <img src="public/categories/dot-shape.png" alt="">
-                        </div>
+
                     </div>
                 </div>
 
+                <div class="absolute right-28 bottom-0 -z-10">
+                    <img src="public/categories/dot-shape.png" alt="">
+                </div>
             </div>
         </div>
 
