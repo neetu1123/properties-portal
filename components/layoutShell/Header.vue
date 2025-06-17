@@ -1,6 +1,6 @@
 <template>
     <!-- Navigation Bar -->
-    <nav class="bg-white  shadow-md fixed w-full top-0 z-50">
+    <nav class="bg-white  shadow-md fixed w-full top-0 z-40">
         <div class="container mx-auto">
             <div class="flex  items-center h-24">
                 <!-- Logo -->
