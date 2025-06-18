@@ -39,12 +39,22 @@
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
+                                About Owner
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:textColor transition-colors">
                                 Property
                             </a>
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
                                 Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:textColor transition-colors">
+                                Attractions
                             </a>
                         </li>
                         <li>
