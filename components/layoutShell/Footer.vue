@@ -4,14 +4,15 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Company Info -->
                 <div class="space-y-6">
-                      <div>
+                    <div>
                         <img src="/A_Curated_Vacation_logo_page-0001__1_-removebg-preview.png" class="h-24" alt="">
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-4">A Curated Vacation
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                           Your Ultimate Inlet Beach Escape — Thoughtfully Curated for Relaxation, Comfort, and Unforgettable Moments by the Sea
+                            Your Ultimate Inlet Beach Escape — Thoughtfully Curated for Relaxation, Comfort, and
+                            Unforgettable Moments by the Sea
                         </p>
                     </div>
 
@@ -19,7 +20,7 @@
                         <Icon name="lucide:map-pin" lucide="!size-6" />
                         <span> Inlet Beach, FL </span>
                     </div>
-                  
+
                 </div>
 
                 <!-- Links -->
@@ -38,18 +39,12 @@
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                About Owner
-
+                                Property
                             </a>
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Vacation Rentals
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Attractions
+                                Reviews
                             </a>
                         </li>
                         <li>
@@ -59,7 +54,12 @@
                         </li>
                         <li>
                             <a href="#" class="text-gray-300 hover:textColor transition-colors">
-                                Contact Us
+                                Blogs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:textColor transition-colors">
+                                Contact
                             </a>
                         </li>
                     </ul>
@@ -81,10 +81,12 @@
                         </div>
                         <div class="flex space-x-6">
                             <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-                                <Icon name="lucide:facebook" class="text-gray-300 !size-4 mr-3" width="24" height="24" />
+                                <Icon name="lucide:facebook" class="text-gray-300 !size-4 mr-3" width="24"
+                                    height="24" />
                             </a>
                             <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">
-                                <Icon name="lucide:instagram" class="text-gray-300 !size-4 mr-3" width="24" height="24" />
+                                <Icon name="lucide:instagram" class="text-gray-300 !size-4 mr-3" width="24"
+                                    height="24" />
                             </a>
 
                             <a href="#" class="text-gray-300 hover:text-orange-500 transition-colors">

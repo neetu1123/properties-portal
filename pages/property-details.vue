@@ -1,3 +1,4 @@
 <template>
     <PropertyDetailsGallery />
+    <PropertyDetailsSelectionTab />
 </template>

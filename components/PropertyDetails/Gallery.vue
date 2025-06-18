@@ -47,7 +47,7 @@
             <!-- Show All Button -->
             <div class="mt-4 flex justify-end -translate-y-32 -translate-x-3">
                 <button @click="openLightbox(4)" title="Show all photos"
-                    class="flex items-center space-x-2 bg-gray-500 text-white border-gray-300 px-8 py-2 hover:bg-gray-600 transition-colors shadow-sm">
+                    class="flex items-center space-x-2 bg-gray-500 text-white border-gray-300 px-8K py-2 hover:bg-gray-600 transition-colors shadow-sm">
                     <span class="font-medium">Show All</span>
                 </button>
             </div>
@@ -68,11 +68,11 @@
                     </div>
                     <div class="flex items-center space-x-4 border border-gray-800 bg-gray-500 p-2">
                         <button @click="startSlideshow()" id="slideshowBtn" aria-label="Start slideshow"
-                            title="Start slideshow" class="flex items-center text-white cursor-pointer">
+                            title="Start slideshow" class="flex items-center text-white cursor-pointer textContent">
                             <Icon name="lucide:play" id="slideshowIcon" />
                         </button>
                         <button @click="toggleThumbnails()" aria-label="Show thumbnails" title="Show thumbnails"
-                            class="text-white cursor-pointer">
+                            class="text-white cursor-pointer textContent">
                             <Icon name="lucide:grid-3x3" class="text-lg" />
                         </button>
                         <button @click="searchImages()" aria-label="Search images" title="Search images"
@@ -277,7 +277,7 @@ function startSlideshow() {
     if (!isSlideshow) {
         isSlideshow = true;
         document.getElementById('slideshowIcon').setAttribute('name', 'lucide:pause');
-        document.getElementById('slideshowText').textContent = 'Stop Slideshow';
+       
         document.getElementById('progressBar').classList.remove('hidden');
 
         let progress = 0;
@@ -312,7 +312,6 @@ function stopSlideshow() {
     isSlideshow = false;
     clearInterval(slideshowInterval);
     document.getElementById('slideshowIcon').setAttribute('name', 'lucide:play');
-    document.getElementById('slideshowText').textContent = 'Start Slideshow';
     document.getElementById('progressBar').classList.add('hidden');
     document.getElementById('progressBar').style.width = '0%';
 }

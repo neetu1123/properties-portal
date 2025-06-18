@@ -21,11 +21,11 @@
                         </button>
                         <NuxtLink to="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/' && 'underline'" >Home
                         </NuxtLink>
-                        <NuxtLink to="/about" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/about' && 'underline'" >About
+                        <NuxtLink to="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/about' && 'underline'" >About
                         </NuxtLink>
-                        <NuxtLink to="/contact-us" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Contact</NuxtLink>
-                        <NuxtLink href="/blogs" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/blogs' && 'underline'">Blogs</NuxtLink>
-                        <NuxtLink href="/categories"
+                        <NuxtLink to="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Contact</NuxtLink>
+                        <NuxtLink href="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/blogs' && 'underline'">Blogs</NuxtLink>
+                        <NuxtLink href="/"
                             class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/categories' && 'underline'">Categories</NuxtLink>
                         <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Reviews</a>
                     </div>
