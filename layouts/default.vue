@@ -5,5 +5,6 @@
       <slot />
     </main>
     <LayoutShellFooter />
+    <LayoutShellNewLatter />
   </div>
 </template>

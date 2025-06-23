@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-28">
+    <div class="mt-28 bg-white">
         <!-- Header -->
         <!-- <header class="bg-white shadow-sm border-b">
             <div class="container mx-auto px-4 py-4">
@@ -23,24 +23,24 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 rounded-2xl" id="imageGrid">
                 <!-- Main large image -->
                 <div class="col-span-2 row-span-2 relative cursor-pointer group" @click="openLightbox(0)">
-                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Cabin Exterior" class="w-full h-[90%] object-fit">
+                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Cabin Exterior" class="w-full object-fit">
                 </div>
 
                 <!-- Secondary images -->
                 <div class="relative cursor-pointer group" @click="openLightbox(1)">
-                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Cabin Side View" class="w-full h-[90%] object-fit">
+                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Cabin Side View" class="w-full object-fit">
                 </div>
 
-                <div class="relative cursor-pointer group " @click="openLightbox(2)">
-                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Deck View" class="w-full h-[90%] object-fit">
+                <div class="relative cursor-pointer group" @click="openLightbox(2)">
+                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Deck View" class="w-full object-fit">
                 </div>
 
-                <div class="relative cursor-pointer group -mt-6" @click="openLightbox(3)">
-                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="King Bedroom" class="w-full h-[82%] object-fit">
+                <div class="relative cursor-pointer group" @click="openLightbox(3)">
+                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="King Bedroom" class="w-full object-fit">
                 </div>
 
-                <div class="relative cursor-pointer group -mt-6" @click="openLightbox(4)">
-                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Game Room" class="w-full h-[82%] object-fit">
+                <div class="relative cursor-pointer group" @click="openLightbox(4)">
+                    <img src="/Gallery/676cfd0cb6ecd.avif" alt="Game Room" class="w-full object-fit">
                 </div>
             </div>
 

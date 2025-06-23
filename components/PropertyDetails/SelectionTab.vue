@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto bg-white">
         <!-- Navigation Tabs -->
-        <nav class="border-b border-gray-200 sticky top-24 bg-white z-50">
+        <nav class="border-b border-gray-200 sticky top-28 bg-white z-40">
             <div class="flex space-x-8 px-6">
                 <button v-for="tab in tabs" :key="tab.id"
                     class="py-4 px-2 text-sm font-medium text-gray-700 hover:text-teal-600"
